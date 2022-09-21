@@ -64,7 +64,7 @@ RUN mix compile && npm install npm@latest
 RUN cd apps/block_scout_web/assets/ && \
     npm install && \
     npm run deploy && \
-    cd /app/apps/explorer/ && \
+    cd ../../explorer/ && \
     npm install && \
     apk update && \
     apk del --force-broken-world alpine-sdk gmp-dev automake libtool inotify-tools autoconf python3
